@@ -1,0 +1,17 @@
+<h2>Edit Task</h2>
+
+<div *ngIf="task">
+  <input [(ngModel)]="task.title" />
+  <br><br>
+
+  <textarea [(ngModel)]="task.description"></textarea>
+  <br><br>
+
+  <input [(ngModel)]="task.category" />
+  <br><br>
+
+  <input type="number" [(ngModel)]="task.progress" />
+  <br><br>
+
+  <button (click)="save()">Save</button>
+</div>
